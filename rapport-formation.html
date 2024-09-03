@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Rapport formation</title>
-    <link rel="stylesheet" href="styles.css" media="screen"  />
-    <link rel="stylesheet" href="print.css" media="print"  />
+    <link rel="stylesheet" href="styles.css" media="screen, print" />
+    <link rel="stylesheet" href="print.css" media="print"/>
     <link rel="stylesheet" href="font.css">
 </head>
+
 <body>
     <!-- Rapport de formation : https://www.vd.ch/fileadmin/user_upload/themes/formation/orientation/fichiers_pdf/apprentissage/rapport_stage_employeur_2024.pdf -->
     <div id="title">
@@ -22,23 +24,234 @@
         <fieldset>
             <field-title>Entreprise</field-title>
             <br>
-            Nom de l'entreprise <input type="text">
-            Nom du responsable <input type="text">
-            E-mail <input type="email">
-            Adresse <input type="text">
-            N° postal <input type="number">
-            Localité <input type="text">
-            Téléphone <input type="phone">
+            <div class="div-entreprise">
+                <div class="infos-entreprise">
+                    <span>Nom de l'entreprise <input id="Nom de l'entreprise" type="text"></span>
+                    <span>Nom du responsable <input type="text" id="Nom du responsable"></span>
+                    <span>E-mail <input type="email"></span>
+                </div>
+                <div class="infos-entreprise">
+                    <span>Adresse <input type="text"></span>
+                    <div>
+                        <span>N° postal <input type="number"></span>
+                        <span>Localité <input type="text"></span>
+                    </div>
+                    <span>Téléphone <input type="phone"></span>
+                </div>
+            </div>
         </fieldset>
     </div>
-    <div id="intern"></div>
-    <div id="behaviour"></div>
-    <div id="hability"></div>
-    <div id="logo"><!-- display only if media=print--></div>
-    <div id="social"></div>
-    <div id="opinion"></div>
+    <div id="intern">
+        <fieldset>
+            <field-title>Stagiaire</field-title>
+            <br>
+            <div class="div-stagiaire">
+                <div class="infos-stagiaire">
+                    <span>Nom<input type="text"></span>
+                    <span>Prénom <input type="text"></span>
+                    <div>
+                        <span>Classe <input type="email"></span>
+                        <span>e <input type=""></span>
+                    </div>
+                </div>
+                <div class="infos-stagiaire">
+                    <span>Adresse <input type="text"></span>
+                    <div>
+                        <span>N° postal <input type="number" size=""></span>
+                        <span>Localité <input type="text"></span>
+                    </div>
+                    <span>Téléphone <input type="phone"></span>
+                </div>
+            </div>
+            <span>dans le métier de <input type="text"></span>
+            <span>du <input type="text"></span>
+            <span>au <input type="text"></span>
+        </fieldset>
+
+    </div>
+    <div id="behaviour">
+        <field-title>Attitude générale</field-title>
+        <br>
+        <div class="div-attitude-general">
+            <div class="infos.attitude-générale">
+                <p>Votre première impression</p>
+                <p>Ponctualité </p>
+                <p>Confiance en soi </p>
+                <p>Dynamisme</p>
+                <p>Attention, concentration</p>
+                <p>Curiosité</p>
+                <p>Esprit d’initiative (sollicite du travail) </p>
+                <p>Plaisir d’apprendre</p>
+            </div>
+            <div class="Très-bien">
+                <p>Très bien</p>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+            </div>
+            <div class="Très-bien">
+                <p>Satisfaisant</p>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+            </div>
+            <div class="Très-bien">
+                <p>À améliorer</p>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+            </div>
+            <div class="Très-bien">
+                <p>Pas observé</p>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+                <span><input type="checkbox"></span>
+            </div>
+        </div>
+        Remarques / Observations <input type="text">
+    </div>
+    <div id="hability">
+        <field-title>Exécution des tâches</field-title>
+        <br>
+        <h4>Très bien</h4>
+        <h4>Satisfaisant</h4>
+        <h4>À améliorer</h4>
+        <h4>Pas observé</h4>
+        Habile <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Rapide <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Soigneux-se <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Méthodique <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Persévérant-e <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Attentif-ve <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Comprend rapidement les consignes <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input
+            type="checkbox">
+        Remarques / Observations <input type="text">
+
+    </div>
+    <div id="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyD40anO-zhaxMaM_TlpilRE1_xiXZar8PA&s" alt="">
+        <p>Département de l'enseignement et de la formation professionnelle</p>
+        <!-- display only if media=print-->
+        <p>Office cantonal d'orientation scolaire et professionnelle</p>
+        <p>2024</p>
+    </div>
+    <div id="social">
+        <field-title>Contact avec autrui</field-title>
+        <br>
+        <h4>Très bien</h4>
+        <h4>Satisfaisant</h4>
+        <h4>À améliorer</h4>
+        <h4>Pas observé</h4>
+        A l'aise dans les contacts <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input
+            type="checkbox">
+        Serviable <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Poli-e <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Souriant-e <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+        Ose poser des questions <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input
+            type="checkbox">
+        Montre de l'intérêt <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input
+            type="checkbox">
+        S'exprime clairement <input type="checkbox"> <input type="checkbox"> <input type="checkbox"> <input
+            type="checkbox">
+        Remarques / Observations <input type="text">
+
+    </div>
+    <div id="opinion">
+        <field-title>Avis de la personne responsable du stage</field-title>
+        <br>
+        <input type="checkbox" id="Adéquat">
+        <label for="Adéquat">Adéquat</label>
+
+        <input type="checkbox" id="A préciser">
+        <label for="A préciser">A préciser</label>
+
+        <input type="checkbox" id="Pas adéquat">
+        <label for="Pas adéquat">Pas adéquat</label>
+
+        Remarques <input type="text">
+
+        <p>Que conseillez-vous à ce ou à cette stagiaire par rapport à son projet ?</p>
+
+        <input type="checkbox" id="Chercher une place d'apprentissage">
+        <label for="Chercher une place d'apprentissage">Chercher une place d'apprentissage</label>
+
+        <input type="checkbox" id="Faire un autre stage">
+        <label for="Faire un autre stage">Faire un autre stage</label>
+
+        <input type="checkbox" id="Continuer à expolrer les métiers">
+        <label for="Continuer à expolrer les métiers">Continuer à expolrer les métiers</label>
+
+        <input type="checkbox" id="Autre">
+        <label for="Autre">Autre</label>
+
+        (preéciser) <input type="text">
+
+        <p>Dans le cas oü ce ou cette stagiaire envisage une formation dans ce métier, quels conseils particuliers lui
+            donneriez-vous?</p>
+        <input type="text">
+
+        <p>Si vous envisagiez d'engager une-e apprenti-e, prendriez-vous ce ou cette stagiaire en formation?</p>
+        <input type="checkbox" id="Oui. Pourquoi ?">
+        <label for="Oui. Pourquoi ?">Oui. Pourquoi ?</label>
+
+        <input type="checkbox" id="Peut-être. Pourquoi ?">
+        <label for="Peut-être. Pourquoi ?">Peut-être. Pourquoi ?</label>
+
+        <input type="checkbox" id="Non. Pourquoi ?">
+        <label for="Non. Pourquoi ?">Non. Pourquoi ?</label>
+
+        <input type="text" name="" id="">
+
+        <p>Avez-vous pu prendre du temps avec le ou la stagiaire pour faire le bilam des quelques jours passés dans
+            votre entreprise ou établissement ?</p>
+
+        <input type="checkbox" id="Oui">
+        <label for="Oui">Oui</label>
+
+        <input type="checkbox" id="Non">
+        <label for="Non">Non</label>
+    </div>
     <div id="signature"></div>
-    <div id="note"></div>
-    <div id="logo"></div>
+    Date <input type="date" name="" id="">
+    Signature <input type="text" name="" id="">
+    <div id="note">
+        <fieldset>
+            <field-title>Note à l'intention du / de la stagiaire</field-title>
+            <br>
+            <p>Ce rapport de stage est à conserver précieusement. Une copie peut être jointe au dossier de candidature
+                pour une place d'apprentissage</p>
+        </fieldset>
+
+
+    </div>
+    <div id="logo"><img id="image-logo2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyD40anO-zhaxMaM_TlpilRE1_xiXZar8PA&s" alt="">
+        <div id="text-logo2">
+            <p id="text-logo21">Département de l'enseignement et de la formation professionnelle</p>
+            <p id="text-logo22">Office cantonal d'orientation scolaire et professionnelle</p>
+            <p id="text-logo23">2024</p>
+        </div>
+    </div>
 </body>
+
 </html>
